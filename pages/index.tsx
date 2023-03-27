@@ -17,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Header editPage="index" />
+        <Header
+          editPage="index"
+          onClick={() => {
+            alert("func from props");
+          }}
+        />
 
         <div className={styles.center}>
           <Image
