@@ -1,12 +1,12 @@
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 
-export const Header = () => {
+export const Header = (props: {editPage: string}) => {
   return (
     <div className={styles.description}>
       <p>
         Get started by editing&nbsp;
-        <code className={styles.code}>pages/about.tsx</code>
+        <code className={styles.code}>pages/{`${props.editPage}.tsx`}</code>
       </p>
       <div>
         <a
